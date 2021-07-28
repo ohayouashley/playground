@@ -54,10 +54,56 @@ function test (myCondition) {
     }
     return "It was false";
   }
-  test(true);
-  test(false);
-  
-  console.log(test);
+//   test(true);
+//   test(false);
+const result = test(true)
+  //console.log(result);
+
+
+function testElseIf (timer) {
+    if (timer) {
+        return "sound alarm";
+    } else {
+        return "vibrate alarm";
+    }
+}
+
+const wakeup = testElseIf(true)
+    console.log(wakeup);
+
+    //
+
+    // Comparison with the Equality Operator
+
+	// - There are many comparison operators in JavaScript. 
+    // All of these operators return a boolean true or false value.
+	// - The most basic operator is the equality operator ==. The equality operator 
+    // compares two values and returns true if they're equivalent or false if they are 
+    // not. Note that equality is different from assignment (=), which assigns the value 
+    // on the right of the operator to a variable on the left.
+	
+function equalityTest(myVal) {
+  if (myVal == 10) {
+     return "Equal";
+  }
+  return "Not Equal";
+}
+
+const myVar = equalityTest(6)
+    console.log(myVar);
+
+// 	- If myVal is equal to 10, the equality operator returns true, 
+//     so the code in the curly braces will execute, and the function 
+//     will return Equal. Otherwise, the function will return Not Equal. 
+//     In order for JavaScript to compare two different data types (for example, numbers and strings), 
+//     it must convert one type to another. This is known as Type Coercion. Once it does, however, it 
+//     can compare terms as follows:
+	
+// 1   ==  1
+// 1   ==  2
+// 1   == '1'
+// "3" ==  3
+
 
 //   - test(true) returns the string It was true, 
 //   and test(false) returns the string It was false.
@@ -72,20 +118,117 @@ function test (myCondition) {
 // - Create an if statement inside the function to return Yes, that was true if the 
 // parameter wasThatTrue is true and return No, that was false otherwise.
 
-//     function TrueOrFalse(wasthatTrue) {
-//         If (isItTrue) 
-//         return "Yes,It's true";
-//     };
-//         return "No, it's false";
 
-// //
+function trueOrFalse(wasThatTrue) {
+    if (wasThatTrue) {
+        return "Yes, that was true";
+    };
+    return "No, that was false";
 
-// function trueOrFalse(wasThatTrue) {
-//     If (wasThatTrue) {
-//         Return "Yes, that was true";
-//     };
-//     Return "No, that was false";
-
-// };
+};
     
-// Console.log(trueOrFalse(true));
+console.log(trueOrFalse(true));
+
+//
+
+
+// Challenge:
+
+// 	- Add the equality operator to the indicated line so that the function 
+//     will return the string Equal when val is equivalent to 12.
+
+function testEqual(val) {
+	if (val == 12) {
+		return "Equal";
+	}
+	return "Not Equal";
+	}
+	
+testEqual(10);
+
+
+const number = testEqual(10);
+    console.log(number);
+
+
+    //
+
+
+    function myAge(val) {
+        if (val == 30) {
+            return "False";
+        } else {
+        return "True"
+        }
+    }
+
+    const howOldAmI = myAge(30);
+    console.log(howOldAmI);
+
+    //
+
+/*
+
+
+Comparison with the Strict Equality Operator
+
+	- Strict equality (===) is the counterpart 
+    to the equality operator (==). However, unlike 
+    the equality operator, which attempts to convert 
+    both values being compared to a common type, the 
+    strict equality operator does not perform a type 
+    conversion.
+	- If the values being compared have different types, 
+    they are considered unequal, and the strict equality 
+    operator will return false.
+	
+Examples
+3 ===  3
+3 === '3'
+		
+- These conditions would return true and false respectively.
+- In the second example, 3 is a Number type and '3' is a String type.
+
+Challenge:
+	- Use the strict equality operator in the if statement 
+    so the function will return the string Equal when val is 
+    strictly equal to 7*/
+
+
+	function testStrict (val) {
+		if (val === 7) {
+			return "Equal";
+		}
+		return "Not Fucking Equal";
+	}
+	
+testStrict(10);
+
+const strict = testStrict(8);
+    console.log(strict);
+
+    //
+
+ /*
+ 
+ Practice comparing different values
+
+	- In the last two challenges, we learned about the equality operator
+     (==) and the strict equality operator (===). Let's do a quick review 
+     and practice using these operators some more.
+	- If the values being compared are not of the same type, the equality
+     operator will perform a type conversion, and then evaluate the values. 
+     However, the strict equality operator will compare both the data type 
+     and value as-is, without converting one type to the other.
+	- Examples:
+	3 == '3' returns true because JavaScript performs type conversion from 
+    string to number. 3 === '3' returns false because the types are different 
+    and type conversion is not performed.
+	- Note: In JavaScript, you can determine the type of a variable or a value 
+    with the typeof operator, as follows:
+	
+typeof 3
+typeof '3'
+		
+typeof 3 returns the string number, 
+and typeof '3' returns the string string.*/
