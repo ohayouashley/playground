@@ -1,0 +1,20 @@
+{
+  "plants": [
+    {
+      "common": "bloodroot",
+      "botanical": "sanguinaria canadensis",
+      "zone": 4,
+      "light": "mostly shady",
+      "price": "2.44",
+      "availability": 3
+    },
+    {
+      "common": "bloodroot",
+      "botanical": "sanguinaria canadensis",
+      "zone": 4,
+      "light": "mostly shady",
+      "price": "2.44",
+      "availability": 3
+    }
+  ]
+}
