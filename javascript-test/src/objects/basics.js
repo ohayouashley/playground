@@ -1,22 +1,20 @@
 let beachThings = {
-    shore: "shell",
-    sea: "water",
+  shore: "shell",
+  sea: "water",
 }
 
-console.log(beachThings);
+console.log(beachThings)
 
 let example1 = {
-
-    firstName: "Ashley",
-    lastName: "Chase"
-
+  firstName: "Ashley",
+  lastName: "Chase",
 }
 
-console.log(example1);
+console.log(example1)
 
 //Use the DOT property:
 
-console.log(example1.firstName); 
+console.log(example1.firstName)
 
 /*
 Everything is an object. 
@@ -46,19 +44,18 @@ Sometimes: numbers, booleans, and strings are objects too.*/
 Practice:*/
 
 let example2 = {
+  firstName: "Ashley", //firstName: key | "Ashley": value
+  lastName: "Chase", //Each "row" is a key value pair
+  address: {
+    city: "Covina",
+    state: "California",
+  },
 
-	firstName: "Ashley",
-	lastName: "Chase",
-	address: {
-		city: "Covina",
-		state: "California"
-	},
+  age: 29,
+  cats: ["Kennedy", "Knightly", "Birdie", "Blake"],
+}
 
-	age: 29,
-	cats: ["Kennedy", "Knightly", "Birdie", "Blake"]
-};
-
-console.log(example2);
+console.log(example2)
 
 //console.log(example2.age);
 
@@ -70,15 +67,15 @@ console.log(example2);
 Here's a sample cat object: */
 
 var myCat = {
-    legs: 4,
-    whiskers: 10,
-    name: "Kennedy",
-    age: 7,
-    mood: "sassy",
-    enemies: ["water", "Late meals"],
-};
+  legs: 4,
+  whiskers: 10,
+  name: "Kennedy",
+  age: 7,
+  mood: "sassy",
+  enemies: ["water", "Late meals"],
+}
 
-console.log(myCat);
+console.log(myCat)
 
 /*
 
@@ -94,15 +91,15 @@ Accessing Object Properties with Dot Notation
 
 var myObj = {
   prop1: "val1",
-  prop2: "val2"
-};
+  prop2: "val2",
+}
 
-var prop1val = myObj.prop1;
-var prop2val = myObj.prop2;
+var prop1val = myObj.prop1
+var prop2val = myObj.prop2
 /*prop1val would have a value of the string val1, and prop2val would 
 have a value of the string val2.*/
 
-console.log(prop1val);
+console.log(prop1val)
 
 /*
 
@@ -113,41 +110,40 @@ Challenge:
 
 // Setup
 var testObj = {
-"hat": "ballcap",
-"shirt": "jersey",
-"shoes": "cleats"
-};
+  hat: "ballcap",
+  shirt: "jersey",
+  shoes: "cleats",
+}
 // Only change code below this line
-var hatValue = testObj.hat; // Change this line
-var shirtValue = testObj.shirt; 
+var hatValue = testObj.hat // Change this line
+var shirtValue = testObj.shirt
 
-console.log(hatValue);
-console.log(shirtValue);
+console.log(hatValue)
+console.log(shirtValue)
 
 //
 
 var myDay = {
-    "workouttime": "30mins",
-    "workoutstyle": "chloeting",
-    "read": "Out",
-    "work": "JavaScript"
-};
+  workouttime: "30mins",
+  workoutstyle: "chloeting",
+  read: "Out",
+  work: "JavaScript",
+}
 
-var workOutTimeValue = myDay.workouttime;
+var workOutTimeValue = myDay.workouttime
 
 //console.log(workOutTimeValue);
 
-
 var foodSchedule = {
-    "breakfast": "miso soup",
-    "lunch": "kimchi salad",
-    "dinner": "chicken curry"
-};
+  breakfast: "miso soup",
+  lunch: "kimchi salad",
+  dinner: "chicken curry",
+}
 
-var breakFast = foodSchedule.breakfast;
+var breakFast = foodSchedule.breakfast
 
-console.log(breakFast);
-    
+console.log(breakFast)
+
 /*
 
 Accessing Object Properties with Bracket Notation
@@ -159,58 +155,54 @@ Accessing Object Properties with Bracket Notation
 	- Here is a sample of using bracket notation to read an object's property:
     */
 var myObj = {
-
   "Space Name": "Kirk",
   "More Space": "Spock",
-  "No Space": "USS Enterprise"
-};
+  "No Space": "USS Enterprise",
+}
 
-myObj["Space Name"];
-myObj['More Space'];
-myObj["No Space"];
-	/*- myObj["Space Name"] would be the string Kirk, myObj['More Space'] would be the 
+myObj["Space Name"]
+myObj["More Space"]
+myObj["No Space"]
+/*- myObj["Space Name"] would be the string Kirk, myObj['More Space'] would be the 
     string Spock, and myObj["NoSpace"] would be the string USS Enterprise.
 Note that property names with spaces in them must be in quotes (single or double).*/
 
-console.log(myObj);
+console.log(myObj)
 
 //Challenge create an object using bracket notation
 
 var luggage = {
-
-    "Jazz luggage": "Lavender",
-    "Piers luggage": "Green",
-    "Ash luggage": "Pink"
+  "Jazz luggage": "Lavender",
+  "Piers luggage": "Green",
+  "Ash luggage": "Pink",
 }
 
-    luggage ["Jazz luggage"];
-    luggage ["Piers luggage"];
-    luggage ["Ash luggage"];
+luggage["Jazz luggage"]
+luggage["Piers luggage"]
+luggage["Ash luggage"]
 
-    console.log(luggage);
+console.log(luggage)
 
 /*Challenge:
 Read the values of the properties an entree and the drink of testObj
  using bracket notation and assign them to entreeValue and drinkValue
   respectively.*/
 
-  var testObj = {
+var testObj = {
+  myentree: "salmon",
+  myappetizer: "wontons",
+  mydessert: "cake",
+}
 
-    "myentree": "salmon",
-    "myappetizer": "wontons",
-    "mydessert": "cake",
-    
-  };
+var objValue = testObj["myentree"]
+var objValue = testObj["myappetizer"]
+var objValue = testObj["mydessert"] //will return the last code written
 
-  var objValue = testObj["myentree"];
-  var objValue = testObj ["myappetizer"];
-  var objValue = testObj ["mydessert"]; //will return the last code written
+console.log(objValue)
 
-  console.log(objValue);
+//
 
-  //
-
-  /*
+/*
 
   Accessing Object Properties with Variables
 
@@ -221,13 +213,14 @@ Read the values of the properties an entree and the drink of testObj
 	- Here is an example of using a variable to access a property:
     */
 var dogs = {
+  Fido: "Mutt",
+  Hunter: "Doberman",
+  Snoopie: "Beagle",
+}
 
-  Fido: "Mutt",  Hunter: "Doberman",  Snoopie: "Beagle"
-};
-
-var myDog = "Hunter";
-var myBreed = dogs[myDog];
-console.log(myBreed);
+var myDog = "Hunter"
+var myBreed = dogs[myDog]
+console.log(myBreed)
 
 /*
 	- The string Doberman would be displayed in the console.
@@ -238,20 +231,17 @@ console.log(myBreed);
 
 */
 var someObj = {
-
-  propName: "John"
-
-};
+  propName: "John",
+}
 
 function propPrefix(str) {
+  var s = "prop"
+  return s + str
+}
 
-  var s = "prop";
-  return s + str;
-};
+var someProp = propPrefix("Name")
 
-var someProp = propPrefix("Name");
-
-console.log(someObj[someProp]);
+console.log(someObj[someProp])
 
 /*
 	- someProp would have a value of the string propName, 
@@ -264,14 +254,12 @@ variable, not the name. */
 	- After you've created a JavaScript object, you can update its properties at any time just like you would update any other variable. You can use either dot or bracket notation to update.
 	- For example, let's look at ourDog:*/
 var ourDog = {
-
-  "name": "Camper",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["everything!"]
-
-};
-	/*- Since he's a particularly happy dog, let's change his name to the string Happy Camper. 
+  name: "Camper",
+  legs: 4,
+  tails: 1,
+  friends: ["everything!"],
+}
+/*- Since he's a particularly happy dog, let's change his name to the string Happy Camper. 
     Here's how we update his object's 
     name property: ourDog.name = "Happy Camper"; or ourDog["name"] = "Happy Camper"; 
     Now when we evaluate ourDog.name, instead of getting Camper, we'll get his new name, 
@@ -281,15 +269,15 @@ var ourDog = {
 	- Update the myDog object's name property. Let's change her name from Coder to Happy Coder. 
     You can use either dot or bracket notation.*/
 var myDog = {
-"name": "Peeta",
-"legs": 4,
-"tails": 1,
-"friends": ["No one"]
-};
+  name: "Peeta",
+  legs: 4,
+  tails: 1,
+  friends: ["No one"],
+}
 
-ourDog.name = "Woofers";
+ourDog.name = "Woofers"
 
-console.log(ourDog.name);
+console.log(ourDog.name)
 
 //
 
@@ -297,36 +285,54 @@ console.log(ourDog.name);
 	- You can add new properties to existing JavaScript objects 
     the same way you would modify them.
 	- Here's how we would add a bark property to ourDog: */
-	ourDog.bark = "bow-wow";
-	//or
-	ourDog["bark"] = "bow-wow";
-	/*- Now when we evaluate ourDog.bark, we'll get his bark, bow-wow.
+ourDog.bark = "bow-wow"
+//or
+ourDog["bark"] = "bow-wow"
+/*- Now when we evaluate ourDog.bark, we'll get his bark, bow-wow.
 		Example:*/
-        
+
 var ourDog = {
+  name: "Camper",
+  legs: 4,
+  tails: 1,
+  friends: ["everything!"],
+}
 
-  "name": "Camper",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["everything!"]
-};
+ourDog.bark = "bow-wow"
 
-ourDog.bark = "bow-wow";
-
-	// - Add a bark property to myDog and set it to a dog sound, such as "woof". 
-    // You may use either dot or bracket notation.
+// - Add a bark property to myDog and set it to a dog sound, such as "woof".
+// You may use either dot or bracket notation.
 
 var myDog = {
+  name: "Inu",
+  legs: 4,
+  tails: 1,
+  friends: ["karoshi"],
+}
 
-	"name": "Inu",
-	"legs": 4,
-	"tails": 1,
-	"friends": ["karoshi"]
-};
+myDog.bark = "woof"
 
-myDog.bark = "woof";
-
-console.log(myDog);
+console.log(myDog)
 
 //
 
+const catalog = {
+  plants: [
+    {
+      common: "bloodroot",
+      botanical: "sanguinaria canadensis",
+      zone: 4,
+      light: "mostly shady",
+      price: "2.44",
+      availability: 03,
+    },
+    {
+      common: "bloodroot",
+      botanical: "sanguinaria canadensis",
+      zone: 4,
+      light: "mostly shady",
+      price: "2.44",
+      availability: 03,
+    },
+  ],
+}

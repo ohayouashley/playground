@@ -81,12 +81,12 @@ Challenge:
     strictly equal to 7*/
 
 
-	function testStrict (val) {
-		if (val === 7) {
-			return "Equal";
-		}
-		return "Not Fucking Equal";
+function testStrict (val) {
+	if (val === 7) {
+		return "Equal";
 	}
+	return "Not Fucking Equal";
+}
 	
 testStrict(10);
 
@@ -94,3 +94,4 @@ const strict = testStrict(8);
     console.log(strict);
 
     //
+
